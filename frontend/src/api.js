@@ -1,7 +1,7 @@
 
 const API_BASE = import.meta.env?.DEV
   ? '/api'
-  : 'https://brandguard-ai-tournament.onrender.com/api';
+  : (import.meta.env?.VITE_API_URL || '/api');
 
 /**Implement the smallest safe fix for the Apply frontend/backend version mismatch.
 
